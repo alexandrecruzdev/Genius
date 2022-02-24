@@ -73,7 +73,7 @@ function exec() {
 let gameOver = false;
 let wrongSound = new Audio('wrong.mp3')
 
-$(document).keypress(function() {
+$(".start").on("click",function() {
     
     setInterval(function() {
         if((compare() == true ) && gamePattern[gamePattern.length] === userChoices[gamePattern.length]) {
@@ -97,6 +97,10 @@ $(document).keypress(function() {
     exec();
     getUserChoices();
 })
+
+
+
+
 
 
 
